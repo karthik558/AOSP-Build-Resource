@@ -1,9 +1,7 @@
-<H1><u> <b> #BASIC OF ROM DEVELOPING (BUILD BOOTING) </b></u>
+<H1><u> <b> GUIDE FOR BUILDING ROM (BUILD BOOTING) </b></u>
  
  
  <H4><b><i> * Included rom building basic needed linux dependency. </i></b></H4>
- 
-<H4><b><i>* Included most of the roms lunch/brunch codes.</i></b></H4>
  
 <H4><b><i>* Included my set of dependencies for building rom.</i></b></H4>
  
