@@ -73,3 +73,13 @@ This for setting-up your desktop environment
 - ./gdrive list
 
 - ./gdrive upload filename
+
+#Giving authorship for commits (When u pick a commit keep authorship)
+
+- Open the patch on GitHub by adding .patch to the end of the commit's URL
+
+- Type the following (supplying the name and date from the patch):
+- git commit --amend --author="Name <email>" --date="date" 
+
+eg:- git commit --amend --author="Karthik-SP <karthik.lal558@gmail.com>" --date="Sat, 3 Oct 2020 09:50:58 +0530"
+
