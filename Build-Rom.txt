@@ -12,6 +12,8 @@ This for setting-up your desktop environment
 
 - repo sync --force-sync --no-tags --no-clone-bundle -j$(nproc --all) 
 
+- repo sync --no-tags --no-clone-bundle --force-sync -c (For upstream rom source )
+
 #CLONNING DEVICE NEEDS (Now cloning device needed files)(Note:- included my device files repos change it according to device)
 
 - git clone https://github.com/CherishOS-Devices/device_xiaomi_6150-common device/xiaomi/sm6150-common
