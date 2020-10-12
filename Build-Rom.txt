@@ -59,3 +59,15 @@ This for setting-up your desktop environment
 - export CCACHE_COMPRESS=1
 
 - breakfast violet or brunch violet ( According to source support )
+
+#UPLOADING FILES TO GDRIVE
+
+- wget https://www.dropbox.com/s/w65lffvkkqvvj93/gdrive?dl=1
+
+- mv gdrive?dl=1 gdrive 
+
+- chmod +x gdrive  
+
+- ./gdrive list
+
+- ./gdrive upload filename
