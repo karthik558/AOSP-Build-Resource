@@ -83,3 +83,28 @@ This for setting-up your desktop environment
 
 eg:- git commit --amend --author="Karthik-SP <karthik.lal558@gmail.com>" --date="Sat, 3 Oct 2020 09:50:58 +0530"
 
+#USING ADB TO TAKE LOGS
+
+^ if your getting "unauthorized" msg, unlock device and type: ^
+
+- adb kill-server
+
+- adb start-server
+
+^ Capture ADB logs using ADB commands ^
+
+- Connect the device to pc
+
+- Enable developer mode in your phone
+
+- Turn on USB debbugging 
+
+- Open cmd
+
+- Type adb devices
+
+- To capture ADB logs : adb logcat
+
+- To stop capturing : ctrl + c
+
+- To save logs : adb logcat>V:/test.txt (don't use C because c is protected)
