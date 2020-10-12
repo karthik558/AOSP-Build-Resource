@@ -1,0 +1,56 @@
+For building AOSP version Nougat  7.1.1 Open JDK version 8 only works
+
+
+If you are getting the following error while building AOSP :
+Have tried building with Ubuntu 18.04, not working for me. I keep getting this error below and cant find how to fix this issue.
+
+
+FAILED: /bin/bash -c "prebuilts/misc/linux-x86/flex/flex-2.5.39 -oout/host/linux-x86/obj/STATIC_LIBRARIES/libaidl-common_intermediates/aidl_language_l.cpp system/tools/aidl/aidl_language_l.ll"
+
+Follow instructions in this link  "https://groups.google.com/forum/?hl=tr#!topic/android-building/0kzPnw3akxg"
+export LC_ALL=C
+
+
+If you are getting the following error :
+FAILED: /bin/bash out/target/common/obj/JAVA_LIBRARIES/framework_intermediates/with-local/classes.dex.rsp
+Out of memory error (version 1.2-rc4 'Carnac' (298900 f95d7bdecfceb327f9d201a1348397ed8a843843 by android-jack-team@google.com)).
+GC overhead limit exceeded.
+Try increasing heap size with java option '-Xmx<size>'.
+
+For solution go to the following link:
+"https://www.2net.co.uk/blog/jack-server.html"
+
+
+For the following error:
+"development/build/sdk.atree:49: couldn't locate source file: bin/etc1tool
+development/build/sdk.atree:83: couldn't locate source file: bin/split-select
+development/build/sdk.atree:88: couldn't locate source file: bin/bcc_compat
+development/build/sdk.atree:203: couldn't locate source file: framework/layoutlib.jar
+"
+follow this link :https://community.nxp.com/thread/479544
+
+Warning: AndroidManifest.xml already defines targetSdkVersion (in http://schemas.android.com/apk/res/android); using existing value in manifest.
+
+
+Error: Could not find or load main class java.se.ee for this error run the following command and the link:
+"https://stackoverflow.com/questions/54287619/could-not-find-or-load-main-class-java-se-ee-while-running-sdkmanager-licence"
+
+unset JAVA_OPTS
+
+
+For this : ERROR:zygote_host_impl_linux.cc(89)] Running as root without — no-sandbox is not supported. See https://crbug.com/638180.
+
+See the this link for solution
+"https://medium.com/@aqeeb.baygroup/when-i-tried-to-open-the-android-emulator-i-faced-the-following-issue-435e3ed390d8"
+Run this command before running our own built Android emulator                       #sudo chmod 0777 /dev/kvm   
+as kvm enables hardware acceleration and runs in chrome browser and in no root mode
+
+How to install Android SDK on Ubuntu 18.04 follow the following link:
+"https://guides.codepath.com/android/installing-android-sdk-tools#installing-via-the-gui"
+
+Run the following commands to setup the sdk , set Android sdk path and running the emulator
+sdkmanager "platforms;android-25" "build-tools;25.0.2" "extras;google;m2repository" "extras;android;m2repository"
+
+run this command to set up the Android sdk root path : ANDROID_SDK_ROOT=home/vikram/android_x86/Android/cmdline-tools/tools
+
+Run this command to run the launch prebuilt emulator : emulator /home/vikram/android_x86/Android/emulator/emulator @a25x86 -verbose -show-kernel -shell
