@@ -6,6 +6,13 @@
 
 This for setting-up your desktop environment
 
+#Adding Git Credentials
+
+- git config --global user.email "you@example.com"
+- git config --global user.name "Your Name"
+
+Replace "you@example.com" with your acutal git email id and "Your Name" with your Name.
+
 #CLONING ROM SOURCE (Moving onto clonning source this needs around 50-100 GB diskspace and internet)
 
 - repo init -u https://github.com/Project-ROM/manifest.git -b ROM-10
